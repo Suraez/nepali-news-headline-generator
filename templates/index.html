@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <form method="POST" action="/">
+            <div class="flex h-screen w-full items-center justify-center">
+                <div class="flex-col w-1/2">
+                    <div class="flex">
+                        <input type="text" id="headline" name="headline"
+                            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="जनामाथि राज्यविरुद्ध" required>
+                        <br>
+                        <input type="submit" class="ml-2 px-4 py-2 bg-red-300 rounded-lg" value="Generate">
+                    </div>
+                    <div class="mt-4">
+                        <p>Some Test Seed Words: बच्चा जन्मिएको एक , दलित र सीमान्त</p>
+                    </div>
+                    {% if result %} 
+                    <h4 class="mt-4 text-teal-400">Generated: {{result }}</h4>
+                    {% endif %}
+                    <p class="text-center pt-4">Made with <i class="fas fa-heart"></i> by <a href="https://surajkumarojha.com.np" target="_blank"
+                            class="underline"> Suraj Ojha</p></a>
+                </div>
+            </div>
+    </form>
+</body>
+</html>
