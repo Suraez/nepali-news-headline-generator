@@ -16,9 +16,6 @@ tokenizer.fit_on_texts(texts=headlineData)
 loaded_model = tf.keras.saving.load_model("nepali_news_headline_model.hdf5")
 
 
-print(headlineData[1])
-print(headlineData[2])
-
 def get_padded_sequence(seed_text):
   # cleaning the sentence
   sentence = seed_text.translate(str.maketrans('', '', string.punctuation))
