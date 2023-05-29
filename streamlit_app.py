@@ -41,7 +41,7 @@ def generate_headline(seed_text, model):
 
 
 # Create a text input field
-st.title("Nepali Text Generator")
+st.title("Nepali News Headline Generator")
 user_input = st.text_input("Please provide some context as given in the examples below: ")
 st.text("Examples: काम नगर्ने ठेकेदारलाई, सर्पदंशका बिरामीलाई, दलित र सीमान्त")
 if st.button("Generate"):
